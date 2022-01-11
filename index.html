@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4eca916332.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body h1 {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .head-nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .head-nav span a {
+            text-decoration: none;
+            color: #464646;
+            font-size: 1.05em;
+            margin: 0 5px;
+            padding: 2px 10px;
+            border-radius: 5px;
+            transition: 0.4s all ease-in-out;
+        }
+
+        .head-nav span a:hover {
+            background-color: tomato;
+            color: white;
+        }
+
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: 2em repeat(5, 1fr);
+            grid-gap: 0.8em;
+            height: 600px;
+        }
+
+        .date, .day {
+            background-color: lightslategrey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.8em;
+            border-radius: 10px;
+        }
+
+        .others-month {
+            background-color: lightgray;
+        }
+
+        .day {
+            font-size: 1.5em;
+            background-color: gainsboro;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="head-nav">
+            <span>
+                <a href="calendar.html">Calender</a>
+                <a href="responsive.html">Food Menu</a>
+                <a href="album.html">Photo Album</a>
+                <a href="navlogin.html">Login</a>
+            </span>
+            <span>
+                <a href=""><i class="fas fa-user"></i></a>
+                <a href=""><i class="fas fa-sign-out-alt"></i></a>
+            </span>
+        </nav>
+    </header>
+
+    <h1>Welcome To My Calendar</h1>
+    <div class="calendar">
+
+        <div class="day">S</div>
+        <div class="day">S</div>
+        <div class="day">M</div>
+        <div class="day">T</div>
+        <div class="day">W</div>
+        <div class="day">T</div>
+        <div class="day">F</div>
+
+        <div class="date others-month">30</div>
+        <div class="date others-month">31</div>
+        <div class="date">1</div>
+        <div class="date">2</div>
+        <div class="date">3</div>
+        <div class="date">4</div>
+        <div class="date">5</div>
+        <div class="date">6</div>
+        <div class="date">7</div>
+        <div class="date">8</div>
+        <div class="date">9</div>
+        <div class="date">10</div>
+        <div class="date">11</div>
+        <div class="date">12</div>
+        <div class="date">13</div>
+        <div class="date">14</div>
+        <div class="date">15</div>
+        <div class="date">16</div>
+        <div class="date">17</div>
+        <div class="date">18</div>
+        <div class="date">19</div>
+        <div class="date">20</div>
+        <div class="date">21</div>
+        <div class="date">22</div>
+        <div class="date">23</div>
+        <div class="date">24</div>
+        <div class="date">25</div>
+        <div class="date">26</div>
+        <div class="date">27</div>
+        <div class="date">28</div>
+        <div class="date">29</div>
+        <div class="date">30</div>
+        <div class="date others-month">1</div>
+        <div class="date others-month">2</div>
+        <div class="date others-month">3</div>
+        
+    </div>
+</body>
+</html>
